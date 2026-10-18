@@ -1,0 +1,35 @@
+:root{
+  --ink:#20211d; --sub:#5b5c53; --faint:#8b8c80;
+  --bg:#faf8f2; --panel:#ffffff; --line:#e6e2d4;
+  --accent:#8a5a2b; --accent-ink:#fffaf2;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --ink:#efece3; --sub:#c2beac; --faint:#8f8c7c;
+    --bg:#1c1b17; --panel:#242320; --line:#3a382f;
+    --accent:#d69a56; --accent-ink:#241a0c;
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:16px/1.65 Georgia, "Times New Roman", serif;
+  padding:40px 16px;
+}
+.wrap{max-width:700px; margin:0 auto}
+.mark{display:flex; align-items:center; gap:10px; font:700 15px system-ui, -apple-system, sans-serif; letter-spacing:.01em}
+.mark svg{width:34px; height:34px; flex:none}
+h1{font:700 clamp(26px,5vw,34px)/1.2 system-ui, -apple-system, sans-serif; letter-spacing:-.01em; margin:22px 0 6px}
+h2{font:700 17px system-ui, -apple-system, sans-serif; margin:34px 0 10px; padding-top:18px; border-top:1px solid var(--line)}
+.sub{color:var(--sub)}
+.meta{font:12.5px system-ui, -apple-system, sans-serif; color:var(--faint); margin-bottom:24px}
+a{color:var(--accent)}
+.card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:16px 0}
+.card h3{font:700 18px system-ui, -apple-system, sans-serif; margin:0 0 4px}
+.links{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}
+.btn{font:600 14px system-ui, -apple-system, sans-serif; text-decoration:none; padding:8px 14px; border-radius:100px; border:1px solid var(--line); background:var(--bg); color:var(--ink)}
+.btn.main{background:var(--accent); border-color:var(--accent); color:var(--accent-ink)}
+code{font:.92em ui-monospace, Menlo, monospace; background:var(--panel); border:1px solid var(--line); padding:.1em .4em; border-radius:5px}
+.dil{float:right; font:600 12.5px system-ui, -apple-system, sans-serif; text-transform:uppercase; letter-spacing:.03em}
+footer{margin-top:46px; padding-top:18px; border-top:1px solid var(--line); font:12px system-ui, -apple-system, sans-serif; color:var(--faint)}
+[hidden]{display:none!important}
