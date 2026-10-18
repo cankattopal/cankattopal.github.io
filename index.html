@@ -3,61 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Solo Test: Levels — Support</title>
-<meta name="description" content="Support and frequently asked questions for the Solo Test: Levels peg solitaire game.">
-<link rel="stylesheet" href="../../stil.css">
+<title>Alperen Cankat Topal — Games</title>
+<meta name="description" content="Independent mobile games by Alperen Cankat Topal: Solo Test: Levels, a peg solitaire puzzle game.">
+<link rel="stylesheet" href="stil.css">
 </head>
 <body>
 <div class="wrap">
-  <a class="dil" id="dil" href="#">Türkçe</a>
-  <div class="mark"><span>SOLO TEST: LEVELS</span></div>
-
-  <div id="en">
-    <h1>Support</h1>
-    <p class="sub">Found a bug or have a question? Write to <a href="mailto:cankattopall@gmail.com">cankattopall@gmail.com</a>. You can also use <strong>Settings → Report a problem</strong> in the game: it opens your email app with your app version and device details already filled in.</p>
-
-    <h2>Frequently asked questions</h2>
-    <p><strong>I bought the Ad-free pack on another device or reinstalled the game.</strong><br>
-    Open <strong>Settings → Restore purchases</strong>. Use the same Apple ID you bought it with.</p>
-    <p><strong>Where is my progress saved?</strong><br>
-    Only on your device. The game has no account and no server, so deleting the app also deletes your progress.</p>
-    <p><strong>How do I change my ad choices?</strong><br>
-    Ads are optional and only appear when you choose to watch one for an extra undo or rebuild. Where the consent form applies, you can change your choice from <strong>Settings → Privacy → Privacy options</strong>.</p>
-    <p><strong>How do I change the language?</strong><br>
-    Open <strong>Settings → Language</strong>. "Automatic" follows your device language.</p>
-
-    <h2>Privacy</h2>
-    <p>Read the <a href="../privacy/">Privacy Policy</a>.</p>
+  <div class="mark">
+    <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+      <circle cx="20" cy="20" r="19" fill="currentColor" opacity="0.08"/>
+      <circle cx="14" cy="14" r="5.4" fill="#8a5a2b"/>
+      <circle cx="26" cy="14" r="5.4" fill="none" stroke="#8a5a2b" stroke-width="1.6" stroke-dasharray="2.6 3"/>
+      <circle cx="14" cy="26" r="5.4" fill="none" stroke="#8a5a2b" stroke-width="1.6" stroke-dasharray="2.6 3"/>
+      <circle cx="26" cy="26" r="5.4" fill="#8a5a2b"/>
+    </svg>
+    <span>Alperen Cankat Topal</span>
   </div>
 
-  <div id="tr" hidden>
-    <h1>Destek</h1>
-    <p class="sub">Bir hata mı buldun ya da sorun mu var? <a href="mailto:cankattopall@gmail.com">cankattopall@gmail.com</a> adresine yaz. Oyundaki <strong>Ayarlar → Sorun bildir</strong> düğmesini de kullanabilirsin: e-posta uygulamanı uygulama sürümün ve cihaz bilgilerin doldurulmuş olarak açar.</p>
+  <h1>Independent mobile games</h1>
+  <p class="sub">Small, carefully made puzzle games for iPhone and iPad. Bağımsız, özenle hazırlanmış bulmaca oyunları.</p>
 
-    <h2>Sık sorulan sorular</h2>
-    <p><strong>Reklamsız paketi başka bir cihazda aldım ya da oyunu yeniden kurdum.</strong><br>
-    <strong>Ayarlar → Satın alımları geri yükle</strong>'ye dokun. Paketi aldığın Apple kimliğiyle giriş yapmış olman gerekir.</p>
-    <p><strong>İlerlemem nerede saklanıyor?</strong><br>
-    Yalnızca cihazında. Oyunun hesabı ve sunucusu yok; uygulamayı silmek ilerlemeni de siler.</p>
-    <p><strong>Reklam tercihimi nasıl değiştiririm?</strong><br>
-    Reklamlar isteğe bağlıdır; yalnızca ekstra geri alma ya da yeniden kurma için izlemeyi seçtiğinde çıkar. Onay ekranının geçerli olduğu yerlerde tercihini <strong>Ayarlar → Gizlilik → Gizlilik seçenekleri</strong>'nden değiştirebilirsin.</p>
-    <p><strong>Dili nasıl değiştiririm?</strong><br>
-    <strong>Ayarlar → Dil</strong>'i aç. "Otomatik" cihazının dilini izler.</p>
-
-    <h2>Gizlilik</h2>
-    <p><a href="../privacy/?lang=tr">Gizlilik Politikası</a>'nı oku.</p>
+  <div class="card">
+    <h3>Solo Test: Levels</h3>
+    <p class="sub">The classic peg solitaire with 50 handcrafted levels, a new daily puzzle with frozen pegs, and the English, European and Wiegleb boards. Plays offline, in 13 languages.</p>
+    <div class="links">
+      <a class="btn" href="privacy.html">Privacy Policy</a>
+      <a class="btn" href="privacy.html?lang=tr">Gizlilik Politikası</a>
+      <a class="btn" href="support.html">Support / Destek</a>
+    </div>
   </div>
 
-  <footer><a href="../../">Alperen Cankat Topal</a> · Solo Test: Levels</footer>
+  <footer>Contact / İletişim: <a href="mailto:cankattopall@gmail.com">cankattopall@gmail.com</a></footer>
 </div>
-<script>
-(function(){
-  var en=document.getElementById('en'), tr=document.getElementById('tr'), b=document.getElementById('dil');
-  function ayarla(l){ var t=l==='tr'; en.hidden=t; tr.hidden=!t; b.textContent=t?'English':'Türkçe'; document.documentElement.lang=l; }
-  var q=(location.search.match(/[?&]lang=(tr|en)/)||[])[1];
-  ayarla(q || ((navigator.language||'').toLowerCase().indexOf('tr')===0 ? 'tr' : 'en'));
-  b.addEventListener('click', function(e){ e.preventDefault(); ayarla(tr.hidden ? 'tr' : 'en'); });
-})();
-</script>
 </body>
 </html>

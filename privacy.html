@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Solo Test: Levels — Privacy Policy</title>
+<meta name="description" content="Privacy policy of the Solo Test: Levels peg solitaire game by Alperen Cankat Topal.">
+</head>
+<body>
+<style>
+  :root{
+    --ink:#20211d; --sub:#5b5c53; --faint:#8b8c80;
+    --bg:#faf8f2; --panel:#ffffff; --line:#e6e2d4;
+    --accent:#8a5a2b; --accent-ink:#fffaf2;
+    --code-bg:#f1ede0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ink:#efece3; --sub:#c2beac; --faint:#8f8c7c;
+      --bg:#1c1b17; --panel:#242320; --line:#3a382f;
+      --accent:#d69a56; --accent-ink:#241a0c;
+      --code-bg:#2c2a23;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ink:#efece3; --sub:#c2beac; --faint:#8f8c7c;
+    --bg:#1c1b17; --panel:#242320; --line:#3a382f;
+    --accent:#d69a56; --accent-ink:#241a0c;
+    --code-bg:#2c2a23;
+  }
+
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Source Serif 4", Georgia, "Times New Roman", serif;
+    padding-inline:20px; padding-block:40px;
+    line-height:1.65;
+  }
+  .wrap{max-width:700px; margin:0 auto;}
+
+  .top{display:flex; align-items:flex-start; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:6px;}
+  .mark{display:flex; align-items:center; gap:10px;}
+  .mark svg{width:34px; height:34px; flex:none;}
+  .mark span{
+    font-family:"Inter", system-ui, sans-serif; font-weight:700; font-size:15px;
+    letter-spacing:.01em; color:var(--ink);
+  }
+  .langbtn{
+    font-family:"Inter", system-ui, sans-serif; font-size:12.5px; font-weight:600;
+    letter-spacing:.03em; text-transform:uppercase;
+    background:var(--panel); color:var(--sub); border:1px solid var(--line);
+    border-radius:100px; padding:7px 14px; cursor:pointer;
+  }
+  .langbtn:hover{color:var(--accent); border-color:var(--accent);}
+
+  h1{
+    font-family:"Inter", system-ui, sans-serif; font-weight:700;
+    font-size:clamp(26px,5vw,34px); letter-spacing:-.01em;
+    margin:18px 0 4px; text-wrap:balance;
+  }
+  .meta{
+    font-family:"Inter", system-ui, sans-serif; font-size:12.5px; color:var(--faint);
+    margin-bottom:28px;
+  }
+
+  h2{
+    font-family:"Inter", system-ui, sans-serif; font-weight:700; font-size:17px;
+    color:var(--ink); margin:38px 0 10px; padding-top:18px; border-top:1px solid var(--line);
+  }
+  h2 .no{
+    font-variant-numeric:tabular-nums; color:var(--accent); margin-right:8px;
+  }
+  p{margin:0 0 13px; color:var(--ink); max-width:64ch;}
+  p.sub{color:var(--sub);}
+  ul{margin:0 0 13px; padding-left:1.15em;}
+  li{margin-bottom:7px; max-width:60ch;}
+  strong{font-weight:600;}
+  a{color:var(--accent);}
+
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:12px;
+    padding:16px 18px; margin:16px 0;
+    font-family:"Inter", system-ui, sans-serif; font-size:13.5px; color:var(--sub);
+  }
+  .card b{color:var(--ink); font-weight:600;}
+  .grid{display:grid; grid-template-columns:1fr; gap:2px 18px; margin-top:8px;}
+  @media (min-width:520px){ .grid{grid-template-columns:1fr 1fr;} }
+  .row{display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px dashed var(--line);}
+  .row span:first-child{color:var(--faint);}
+  .row span:last-child{color:var(--ink); text-align:right;}
+
+  code{
+    font-family:"JetBrains Mono", ui-monospace, monospace; font-size:.92em;
+    background:var(--code-bg); padding:.12em .4em; border-radius:5px;
+  }
+
+  footer{
+    margin-top:46px; padding-top:18px; border-top:1px solid var(--line);
+    font-family:"Inter", system-ui, sans-serif; font-size:12px; color:var(--faint);
+  }
+
+  [hidden]{display:none!important;}
+</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@500&display=swap">
+
+<div class="wrap">
+  <div class="top">
+    <div class="mark">
+      <svg viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" fill="var(--accent)" opacity="0.12"/>
+        <circle cx="14" cy="14" r="5.4" fill="var(--accent)"/>
+        <circle cx="26" cy="14" r="5.4" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="2.6 3"/>
+        <circle cx="14" cy="26" r="5.4" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="2.6 3"/>
+        <circle cx="26" cy="26" r="5.4" fill="var(--accent)"/>
+      </svg>
+      <span>SOLO TEST</span>
+    </div>
+    <button class="langbtn" id="langBtn" type="button">Türkçe oku</button>
+  </div>
+
+  <!-- ================= EN ================= -->
+  <div id="en">
+    <h1>Privacy Policy</h1>
+    <div class="meta">Effective date: October 7, 2026 · Developer: Alperen Cankat Topal (individual developer)</div>
+
+    <p class="sub">Solo Test is a peg-solitaire puzzle game developed and published by Alperen Cankat Topal, an individual/independent developer ("I", "the developer"). This policy explains what data the app touches, why, and what choices you have. In short: <strong>Solo Test has no account system and no server of its own</strong> — your progress lives on your device, and the only outside data flow is the optional advertising, whose consent you can change in Settings.</p>
+
+    <h2><span class="no">01</span>Data we do <em>not</em> collect</h2>
+    <p>Solo Test has no sign-up, no login, and no backend operated by the developer. I never ask for your name, email, phone number, location, contacts, camera, microphone or photo library — the app never requests those permissions.</p>
+
+    <h2><span class="no">02</span>Data stored only on your device</h2>
+    <p>The following stays on your device (in the OS's standard app-storage area) and is never transmitted to the developer:</p>
+    <div class="card">
+      <div class="grid">
+        <div class="row"><span>Level progress &amp; scores</span><span>local only</span></div>
+        <div class="row"><span>Settings (language, sound, theme, colors)</span><span>local only</span></div>
+        <div class="row"><span>Optional profile name &amp; figure</span><span>local only</span></div>
+        <div class="row"><span>Daily-puzzle streak</span><span>local only</span></div>
+      </div>
+    </div>
+    <p>Deleting the app deletes this data. You can also clear your profile at any time from <strong>Settings → Profile → Delete profile</strong>.</p>
+
+    <h2><span class="no">03</span>Advertising</h2>
+    <p>Solo Test shows optional, rewarded ads (for example, an extra undo or a free rebuild) using <strong>Google's Mobile Ads SDK (AdMob)</strong>. Before any ad loads, Google's <strong>User Messaging Platform (UMP)</strong> shows a consent form where you choose personalized or non-personalized ads, in line with GDPR/UK rules where they apply, and the Turkey-specific notice in section 09 below where it applies; on iOS you'll additionally see Apple's App Tracking Transparency prompt. Serving ads may involve Google and its partners processing an advertising identifier, an approximate location derived from your IP address, ad-interaction data, and diagnostic and performance data under <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own Privacy Policy</a> and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob's data-collection disclosure</a>. You can change your ad-consent choice any time from <strong>Settings → Privacy → Privacy options</strong> (shown wherever the consent form applies). This policy is always available in the app under <strong>Settings → Privacy → Privacy policy</strong>.</p>
+
+    <h3 style="font-family:Inter,system-ui,sans-serif;font-size:15px;margin:22px 0 8px">In-app purchase</h3>
+    <p>Solo Test offers one optional, one-time purchase: the <strong>Ad-free pack</strong>, which gives extra undos and rebuilds without watching ads. Payment is handled entirely by the <strong>Apple App Store</strong> or <strong>Google Play</strong> under their own terms and privacy policies; the developer never receives your name, card or payment details. The app only keeps, on your device, whether the pack has been purchased, and asks the store to confirm this when it starts. You can restore the purchase on a new device from <strong>Settings → Restore purchases</strong>.</p>
+
+    <h2><span class="no">04</span>If you email us a bug report</h2>
+    <p>The in-app <strong>"Report a problem"</strong> button opens your own email app with a pre-filled message. It includes basic diagnostics — app version, device model, OS version, language, current level and screen size — to help fix the issue. Nothing is sent unless <em>you</em> press send in your mail app, and it goes to <code>cankattopall@gmail.com</code>, read by the developer only for support purposes.</p>
+
+    <h2><span class="no">05</span>Children</h2>
+    <p>Solo Test is a general-audience puzzle game and doesn't knowingly collect personal information from anyone, including children. Where store settings require it (e.g. Google Play's Families policies), ads are configured accordingly.</p>
+
+    <h2><span class="no">06</span>Your choices</h2>
+    <ul>
+      <li>Turn sound, vibration, or theme on/off anytime in Settings — purely local, no data implication.</li>
+      <li>Change or withdraw ad consent from Settings → Privacy options.</li>
+      <li>Delete your local profile from Settings → Profile.</li>
+      <li>Uninstalling the app removes all local data immediately.</li>
+    </ul>
+
+    <h2><span class="no">07</span>Changes to this policy</h2>
+    <p>If this policy changes, the effective date above will be updated. Continued use of the app after a change means you accept the updated policy.</p>
+
+    <h2><span class="no">08</span>Contact</h2>
+    <p>Questions about this policy or your data: <code>cankattopall@gmail.com</code>.</p>
+
+    <h2><span class="no">09</span>Notice for users in Turkey (KVKK)</h2>
+    <p>If you are located in Turkey, Law No. 6698 on the Protection of Personal Data ("KVKK") applies to the limited processing described in section 03 above. See the Turkish version of this page for the full KVKK Aydınlatma Metni (disclosure text), including the data controller's identity, the legal basis for processing and cross-border transfer, and your rights under KVKK Article 11.</p>
+  </div>
+
+  <!-- ================= TR ================= -->
+  <div id="tr" hidden>
+    <h1>Gizlilik Politikası</h1>
+    <div class="meta">Yürürlük tarihi: 7 Ekim 2026 · Geliştirici: Alperen Cankat Topal (bireysel geliştirici)</div>
+
+    <p class="sub">Solo Test, bireysel/bağımsız geliştirici Alperen Cankat Topal ("ben", "geliştirici") tarafından geliştirilip yayınlanan bir tek-taşlı bulmaca oyunudur. Bu metin, uygulamanın hangi verilere neden dokunduğunu ve elindeki seçenekleri anlatır. Kısaca: <strong>Solo Test'in hesap sistemi ve kendi sunucusu yok</strong> — ilerlemen cihazında tutulur, dışarıya giden tek veri akışı, onayını Ayarlar'dan değiştirebildiğin isteğe bağlı reklamlardır.</p>
+
+    <h2><span class="no">01</span>Toplamadığımız veriler</h2>
+    <p>Solo Test'te kayıt olma, giriş yapma ya da geliştiricinin işlettiği bir sunucu yok. Adını, e-postanı, telefonunu, konumunu, rehberini, kameranı, mikrofonunu ya da fotoğraflarını asla istemem — uygulama bu izinleri hiç talep etmez.</p>
+
+    <h2><span class="no">02</span>Yalnızca cihazında tutulan veriler</h2>
+    <p>Aşağıdakiler cihazında (işletim sisteminin standart uygulama deposunda) kalır, geliştiriciye asla iletilmez:</p>
+    <div class="card">
+      <div class="grid">
+        <div class="row"><span>Level ilerlemesi ve rekorlar</span><span>yalnız cihazda</span></div>
+        <div class="row"><span>Ayarlar (dil, ses, tema, renkler)</span><span>yalnız cihazda</span></div>
+        <div class="row"><span>İsteğe bağlı profil adı ve figürü</span><span>yalnız cihazda</span></div>
+        <div class="row"><span>Günlük bulmaca serisi</span><span>yalnız cihazda</span></div>
+      </div>
+    </div>
+    <p>Uygulamayı silmek bu verileri de siler. Profilini istediğin an <strong>Ayarlar → Profil → Profili sil</strong> yolundan da temizleyebilirsin.</p>
+
+    <h2><span class="no">03</span>Reklamlar</h2>
+    <p>Solo Test, <strong>Google'ın Mobile Ads SDK'sı (AdMob)</strong> ile isteğe bağlı, ödüllü reklamlar gösterir (örn. ekstra geri alma ya da ücretsiz yeniden kurma). Herhangi bir reklam yüklenmeden önce Google'ın <strong>User Messaging Platform (UMP)</strong> aracı, uygulanabilir olduğu yerlerde (GDPR/İngiltere ve aşağıdaki 09. bölümde açıklanan Türkiye'ye özgü bildirim) kişiselleştirilmiş ya da kişiselleştirilmemiş reklam seçimini sana sorar; iOS'ta ayrıca Apple'ın Uygulama İzleme Şeffaflığı sorusunu görürsün. Reklam gösterimi sırasında Google ve iş ortakları, <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google'ın kendi Gizlilik Politikası</a> ve <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob veri toplama açıklaması</a> kapsamında bir reklam kimliğini, IP adresinden çıkarılan yaklaşık konumu, reklam etkileşim verilerini ve tanılama/performans verilerini işleyebilir. Reklam onayını istediğin an <strong>Ayarlar → Gizlilik → Gizlilik seçenekleri</strong>'nden değiştirebilirsin (onay ekranının gösterildiği her yerde görünür). Bu politikaya uygulama içinden <strong>Ayarlar → Gizlilik → Gizlilik politikası</strong> ile her zaman ulaşabilirsin.</p>
+
+    <h3 style="font-family:Inter,system-ui,sans-serif;font-size:15px;margin:22px 0 8px">Uygulama içi satın alma</h3>
+    <p>Solo Test'te isteğe bağlı, tek seferlik tek bir satın alma vardır: reklam izlemeden ekstra geri alma ve yeniden kurma hakkı veren <strong>Reklamsız paket</strong>. Ödeme tamamen kendi koşulları ve gizlilik politikaları altında <strong>Apple App Store</strong> ya da <strong>Google Play</strong> tarafından alınır; geliştirici adını, kart ya da ödeme bilgilerini hiçbir zaman görmez. Uygulama yalnızca paketin alınıp alınmadığını cihazında tutar ve açılışta bunu mağazaya doğrulatır. Yeni bir cihazda satın alımını <strong>Ayarlar → Satın alımları geri yükle</strong> ile geri getirebilirsin.</p>
+
+    <h2><span class="no">04</span>Bize e-posta ile hata bildirirsen</h2>
+    <p>Uygulama içindeki <strong>"Sorun bildir"</strong> düğmesi, kendi e-posta uygulamanı önceden doldurulmuş bir mesajla açar. Sorunu çözebilmem için uygulama sürümü, cihaz modeli, işletim sistemi sürümü, dil, mevcut level ve ekran boyutu gibi temel teşhis bilgilerini içerir. Sen e-posta uygulamanda göndere basmadıkça hiçbir şey gönderilmez; gönderirsen <code>cankattopall@gmail.com</code> adresine ulaşır ve yalnızca geliştirici tarafından destek amacıyla okunur.</p>
+
+    <h2><span class="no">05</span>Çocuklar</h2>
+    <p>Solo Test genel kitleye yönelik bir bulmaca oyunudur ve çocuklar dahil kimseden bilerek kişisel veri toplamaz. Mağazaların gerektirdiği yerlerde (örn. Google Play Aile politikaları) reklamlar buna göre ayarlanır.</p>
+
+    <h2><span class="no">06</span>Seçeneklerin</h2>
+    <ul>
+      <li>Ses, titreşim ya da temayı Ayarlar'dan istediğin an aç/kapat — tamamen yerel, veriyle ilgisi yok.</li>
+      <li>Reklam onayını Ayarlar → Gizlilik seçenekleri'nden değiştir ya da geri çek.</li>
+      <li>Yerel profilini Ayarlar → Profil'den sil.</li>
+      <li>Uygulamayı kaldırmak tüm yerel verileri anında siler.</li>
+    </ul>
+
+    <h2><span class="no">07</span>Bu politikadaki değişiklikler</h2>
+    <p>Bu politika değişirse yukarıdaki yürürlük tarihi güncellenir. Değişiklikten sonra uygulamayı kullanmaya devam etmen, güncellenmiş politikayı kabul ettiğin anlamına gelir.</p>
+
+    <h2><span class="no">08</span>İletişim</h2>
+    <p>Bu politika ya da verilerinle ilgili sorular için: <code>cankattopall@gmail.com</code>.</p>
+
+    <h2><span class="no">09</span>KVKK Aydınlatma Metni</h2>
+    <p><strong>Veri Sorumlusu:</strong> Alperen Cankat Topal, bireysel yazılım geliştirici. İletişim: <code>cankattopall@gmail.com</code>. Solo Test'in tüzel bir yayıncısı ya da kendi sunucusu bulunmuyor; aşağıda anlatılan sınırlı işleme yalnızca reklam alt yapısı üzerinden gerçekleşir.</p>
+    <p><strong>İşlenen Kişisel Veri Kategorileri:</strong> Reklam gösterimi sırasında Google AdMob/UMP aracılığıyla işlenen reklam kimliği (advertising ID / IDFA), yaklaşık cihaz ve teknik veriler (cihaz modeli, işletim sistemi sürümü, IP tabanlı yaklaşık konum, uygulama etkileşim/gösterim verileri). Uygulamanın kendisi 01-02. bölümlerde anlatıldığı gibi hesap ya da iletişim verisi toplamaz; e-posta ile ulaşırsan 04. bölümdeki veriyi işlerim.</p>
+    <p><strong>İşleme Amaçları:</strong> Kişiselleştirilmiş ya da kişiselleştirilmemiş reklam gösterimi, reklam performans ölçümü, dolandırıcılık/kötüye kullanım önleme ve uygulamanın ücretsiz sürümünün sürdürülebilmesi.</p>
+    <p><strong>Hukuki Sebep:</strong> KVKK m.5/2 kapsamındaki meşru menfaatin yeterli olmadığı ölçüde — özellikle kişiselleştirilmiş reklam gösterimi ve aşağıdaki yurt dışı aktarım için — açık rızan: uygulama içindeki UMP onay ekranında verdiğin ya da reddettiğin onay.</p>
+    <p><strong>Yurt Dışına Aktarım:</strong> Google'ın reklam alt yapısı, işlenen verileri Türkiye dışındaki (başta ABD) sunucularda işleyebilir. Bu aktarım KVKK m.9 uyarınca açık rızana dayanır; onayını istediğin an <strong>Ayarlar → Gizlilik seçenekleri</strong>'nden geri çekebilirsin — geri çekmen hâlinde kişiselleştirilmemiş reklam gösterimine devam edilir ya da hiç reklam yüklenmez, oyun deneyimin bundan etkilenmez.</p>
+    <p><strong>İlgili Kişi Olarak Haklarınız (KVKK m.11):</strong></p>
+    <ul>
+      <li>Kişisel verinin işlenip işlenmediğini öğrenme,</li>
+      <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
+      <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+      <li>Yurt içinde/yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
+      <li>Eksik/yanlış işlenmişse düzeltilmesini isteme,</li>
+      <li>KVKK m.7 şartları oluştuğunda silinmesini/yok edilmesini isteme,</li>
+      <li>Yukarıdaki düzeltme/silme işlemlerinin verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme,</li>
+      <li>İşlenen verilerin münhasıran otomatik sistemlerle analiz edilmesi yoluyla aleyhine bir sonucun ortaya çıkmasına itiraz etme,</li>
+      <li>Kanuna aykırı işlenmesi sebebiyle zarara uğraman hâlinde zararın giderilmesini talep etme.</li>
+    </ul>
+    <p>Bu haklarını kullanmak için <code>cankattopall@gmail.com</code> adresine yazılı olarak başvurabilirsin; talepler mümkün olan en kısa sürede ve KVKK'nın öngördüğü süre içinde yanıtlanır.</p>
+  </div>
+
+  <footer><a href="./">Alperen Cankat Topal</a> · <a href="support.html">Support / Destek</a> · Solo Test: Levels</footer>
+</div>
+
+<script>
+(function(){
+  var en = document.getElementById('en'), tr = document.getElementById('tr'), btn = document.getElementById('langBtn');
+  function apply(lang){
+    if(lang === 'tr'){ en.hidden = true; tr.hidden = false; btn.textContent = 'Read in English'; document.documentElement.lang='tr'; }
+    else { en.hidden = false; tr.hidden = true; btn.textContent = 'Türkçe oku'; document.documentElement.lang='en'; }
+  }
+  var q = (location.search.match(/[?&]lang=(tr|en)/)||[])[1];
+  var saved = q || ((navigator.language||'').toLowerCase().indexOf('tr')===0 ? 'tr' : 'en');
+  if(!q){ try{ saved = localStorage.getItem('solo-test-privacy-lang') || saved; }catch(e){} }
+  apply(saved);
+  btn.addEventListener('click', function(){
+    var next = (tr.hidden ? 'tr' : 'en');
+    apply(next);
+    try{ localStorage.setItem('solo-test-privacy-lang', next); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
